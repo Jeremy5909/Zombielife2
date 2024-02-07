@@ -5,8 +5,8 @@
 #ifndef ZOMBIELIFE2_CHEST_H
 #define ZOMBIELIFE2_CHEST_H
 
-#include <vector>
 #include "Item.h"
+#include <iostream>
 
 class Chest : public Item {
 private:

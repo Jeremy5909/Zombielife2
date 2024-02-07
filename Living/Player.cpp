@@ -4,7 +4,7 @@
 
 #include "Player.h"
 
-void Player::setName(std::string name) {
+void Player::setName(const std::string& name) {
     pName = name;
 }
 

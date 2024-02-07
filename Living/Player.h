@@ -5,7 +5,6 @@
 #ifndef ZOMBIELIFE2_PLAYER_H
 #define ZOMBIELIFE2_PLAYER_H
 
-#include <vector>
 #include <iostream>
 #include "../Items/Item.h"
 #include "Zombie.h"
@@ -16,7 +15,7 @@ private:
 public:
     std::vector<Item> inventory;
 
-    void setName(std::string name);
+    void setName(const std::string& name);
     std::string getName();
 
     void StumbleUponItem(const Item& item);

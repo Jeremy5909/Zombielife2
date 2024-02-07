@@ -3,7 +3,6 @@
 //
 
 #include "Chest.h"
-#include <iostream>
 
 Chest::Chest(const std::string& name) : Item(name) {}
 
