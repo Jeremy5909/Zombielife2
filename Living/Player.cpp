@@ -22,5 +22,5 @@ void Player::StumbleUponItem(const Item& item) {
         // Name starts with vowel
         std::cout << "You stumble upon an ";
     }
-    std::cout << item.getName() << ".";
+    std::cout << item.getName() << "." << std::endl;
 }

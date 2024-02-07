@@ -8,7 +8,7 @@
 #include <vector>
 #include "Item.h"
 
-class Chest : Item {
+class Chest : public Item {
 private:
     std::vector<Item> inventory;
 public:

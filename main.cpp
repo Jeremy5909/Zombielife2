@@ -8,7 +8,7 @@ void Intro(Player player) {
                  "You can barely think of what you're name is and remember that it is: ";
     std::string tempName; std::cin >> tempName; player.setName(tempName);
 
-    Chest StarterChest("StarterChest");
+    Chest StarterChest("chest");
     player.StumbleUponItem(StarterChest);
 }
 
