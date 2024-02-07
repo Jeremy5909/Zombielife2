@@ -10,8 +10,6 @@ add_executable(zombielife2 main.cpp
         Living/Living.h
         Living/Zombie.cpp
         Living/Zombie.h
-        Living/Player.cpp
-        Living/Player.h
         Items/Weapon.cpp
         Items/Weapon.h
         Items/Chest.cpp
