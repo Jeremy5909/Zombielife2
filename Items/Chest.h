@@ -13,6 +13,7 @@ private:
     std::vector<Item> inventory;
 public:
     explicit Chest(const std::string &name);
+    void ListInventory();
 };
 
 
