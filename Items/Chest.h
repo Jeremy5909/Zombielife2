@@ -12,7 +12,7 @@ class Chest : public Item {
 private:
     std::vector<Item> inventory;
 public:
-    Chest(const std::string &name);
+    explicit Chest(const std::string &name);
 };
 
 
