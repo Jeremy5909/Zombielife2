@@ -7,6 +7,7 @@
 
 #include "Item.h"
 #include <iostream>
+#include "../Living/Player.h"
 
 class Chest : public Item {
 private:
@@ -14,6 +15,7 @@ private:
 public:
     explicit Chest(const std::string &name);
     void ListInventory();
+    void open(Player& player);
 };
 
 

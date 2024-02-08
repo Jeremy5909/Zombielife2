@@ -1,47 +1,36 @@
 #include <iostream>
 #include "Items/Item.h"
 #include "Items/Chest.h"
-
-// Player stuff
-
-std::string playerName;
-std::vector<Item> playerInventory;
-
-void StumbleUponItem(const Item& item) {
-    std::string vowels = "aeiouAEIOU";
-
-    if(vowels.find(item.getName()[0]) == std::string::npos) {
-        // Name starts with constant
-        std::cout << "You stumble upon a ";
-    } else {
-        // Name starts with vowel
-        std::cout << "You stumble upon an ";
-    }
-    std::cout << item.getName() << "." << std::endl;
-};
+#include "Living/Player.h"
 
 // Game stuff
 
-void Intro() {
+void Intro(Player& player) {
     std::cout << "You wake up, feeling horrible. All you want is brains. " << std::endl <<
                  "You can barely think of what you're name is and remember that it is: ";
 
     // Get player name
-    std::cin >> playerName;
+    std::cin >> player.pName;
     std::cout << std::endl;
 
     Chest StarterChest("chest");
-    StumbleUponItem(StarterChest);
+    player.StumbleUponItem(StarterChest);
 }
 
-void GameLoop() {
+void GameLoop(Player& player) {
     std::string input;
     std::cout << "> " ; std::cin >> input;
+
+    player.handleCommand(input);
+    player.com
+
+    GameLoop(player);
 }
 
 int main() {
-    Intro();
-    GameLoop();
+    Player player;
+    Intro(player);
+    GameLoop(player);
 
     return 0;
 }

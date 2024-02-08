@@ -14,4 +14,7 @@ add_executable(zombielife2 main.cpp
         Items/Weapon.h
         Items/Chest.cpp
         Items/Chest.h
+        Living/Player.cpp
+        Living/Player.h
+        Command.h
 )

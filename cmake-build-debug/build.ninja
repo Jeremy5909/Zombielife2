@@ -73,12 +73,6 @@ build CMakeFiles/zombielife2.dir/Living/Zombie.cpp.o: CXX_COMPILER__zombielife2_
   OBJECT_DIR = CMakeFiles/zombielife2.dir
   OBJECT_FILE_DIR = CMakeFiles/zombielife2.dir/Living
 
-build CMakeFiles/zombielife2.dir/Living/Player.cpp.o: CXX_COMPILER__zombielife2_unscanned_Debug /Users/jherczeg27/Documents/CLionProjects/zombielife2/Living/Player.cpp || cmake_object_order_depends_target_zombielife2
-  DEP_FILE = CMakeFiles/zombielife2.dir/Living/Player.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/zombielife2.dir
-  OBJECT_FILE_DIR = CMakeFiles/zombielife2.dir/Living
-
 build CMakeFiles/zombielife2.dir/Items/Weapon.cpp.o: CXX_COMPILER__zombielife2_unscanned_Debug /Users/jherczeg27/Documents/CLionProjects/zombielife2/Items/Weapon.cpp || cmake_object_order_depends_target_zombielife2
   DEP_FILE = CMakeFiles/zombielife2.dir/Items/Weapon.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
@@ -91,6 +85,12 @@ build CMakeFiles/zombielife2.dir/Items/Chest.cpp.o: CXX_COMPILER__zombielife2_un
   OBJECT_DIR = CMakeFiles/zombielife2.dir
   OBJECT_FILE_DIR = CMakeFiles/zombielife2.dir/Items
 
+build CMakeFiles/zombielife2.dir/Living/Player.cpp.o: CXX_COMPILER__zombielife2_unscanned_Debug /Users/jherczeg27/Documents/CLionProjects/zombielife2/Living/Player.cpp || cmake_object_order_depends_target_zombielife2
+  DEP_FILE = CMakeFiles/zombielife2.dir/Living/Player.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/zombielife2.dir
+  OBJECT_FILE_DIR = CMakeFiles/zombielife2.dir/Living
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target zombielife2
@@ -99,7 +99,7 @@ build CMakeFiles/zombielife2.dir/Items/Chest.cpp.o: CXX_COMPILER__zombielife2_un
 #############################################
 # Link the executable zombielife2
 
-build zombielife2: CXX_EXECUTABLE_LINKER__zombielife2_Debug CMakeFiles/zombielife2.dir/main.cpp.o CMakeFiles/zombielife2.dir/Items/Item.cpp.o CMakeFiles/zombielife2.dir/Living/Living.cpp.o CMakeFiles/zombielife2.dir/Living/Zombie.cpp.o CMakeFiles/zombielife2.dir/Living/Player.cpp.o CMakeFiles/zombielife2.dir/Items/Weapon.cpp.o CMakeFiles/zombielife2.dir/Items/Chest.cpp.o
+build zombielife2: CXX_EXECUTABLE_LINKER__zombielife2_Debug CMakeFiles/zombielife2.dir/main.cpp.o CMakeFiles/zombielife2.dir/Items/Item.cpp.o CMakeFiles/zombielife2.dir/Living/Living.cpp.o CMakeFiles/zombielife2.dir/Living/Zombie.cpp.o CMakeFiles/zombielife2.dir/Items/Weapon.cpp.o CMakeFiles/zombielife2.dir/Items/Chest.cpp.o CMakeFiles/zombielife2.dir/Living/Player.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/zombielife2.dir
   POST_BUILD = :

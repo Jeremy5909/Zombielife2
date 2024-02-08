@@ -11,3 +11,7 @@ void Chest::ListInventory() {
         std::cout << "- " << item.getName();
     }
 }
+
+void Chest::open(Player &player) {
+    player.addCommand("open");
+}
